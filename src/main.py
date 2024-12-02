@@ -29,7 +29,7 @@ def add(x, y) -> any:
 def main():
     logging.info("Starting main function")
     greetings()
-    # print(add(1, 2))
+    print(add(1, 2))
     load_dotenv()  # load environment variables from .env file
     print(os.getenv("MULTILINE"))
     logging.info("Finished main function")
