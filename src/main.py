@@ -17,6 +17,7 @@ def greetings():
 
 
 def add(x, y) -> any:
+    """Test function to add two numbers and check how pytest works"""
     logging.info("Starting add function")
     try:
         x_int: int = int(x)
