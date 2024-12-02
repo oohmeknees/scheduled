@@ -3,6 +3,7 @@ import pytest
 from main import add
 
 
+# list all tests
 @pytest.mark.parametrize(
     "int1, int2, expected",
     [
@@ -15,5 +16,6 @@ from main import add
         ),
     ],
 )
+# test function
 def test_add(int1, int2, expected) -> None:
     assert add(int1, int2) == expected

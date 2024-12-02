@@ -11,6 +11,7 @@ def main():
 
 
 def greetings():
+    """Simple message to output"""
     logging.info("Starting greetings function")
     print("Hello from scheduled!")
     logging.info("Finished greetings function")
