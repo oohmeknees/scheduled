@@ -1,13 +1,9 @@
 import logging
+import os
+
+from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO)
-
-
-def main():
-    logging.info("Starting main function")
-    greetings()
-    print(add("a", "b"))
-    logging.info("Finished main function")
 
 
 def greetings():
@@ -28,6 +24,15 @@ def add(x, y) -> any:
         result = "error"
     logging.info("Finished add function")
     return result
+
+
+def main():
+    logging.info("Starting main function")
+    greetings()
+    # print(add(1, 2))
+    load_dotenv()
+    print(os.getenv("MULTILINE"))
+    logging.info("Finished main function")
 
 
 if __name__ == "__main__":
