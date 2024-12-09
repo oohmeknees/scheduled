@@ -4,7 +4,10 @@ __pycache__/
 build/
 dist/
 wheels/
+tests/
+data/
 *.egg-info
+src/config.py
 
 # environment
 .env
